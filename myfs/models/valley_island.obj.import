@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8e5wiiv2si5m"
+path="res://.godot/imported/valley_island.obj-5be918e37855e4d6315c8b0a93378c13.mesh"
+
+[deps]
+
+files=["res://.godot/imported/valley_island.obj-5be918e37855e4d6315c8b0a93378c13.mesh"]
+
+source_file="res://models/valley_island.obj"
+dest_files=["res://.godot/imported/valley_island.obj-5be918e37855e4d6315c8b0a93378c13.mesh", "res://.godot/imported/valley_island.obj-5be918e37855e4d6315c8b0a93378c13.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,51 @@
+# .gitignore for a project using Godot and Blender
+
+# Ignore the .DS_Store file, which is created by macOS in every directory
+.DS_Store
+
+# Ignore the Godot-specific import files
+.import/
+
+# Ignore the Godot export templates
+export_presets.cfg
+
+# Ignore the Godot editor settings
+.editor/
+
+# Ignore the Godot project-specific settings
+.godot/
+
+# Ignore the Godot cache files
+.cache/
+
+# Ignore the Blender backup files
+*.blend1
+*.blend2
+*.blend@
+
+# Ignore the Blender temporary files
+*.blend~
+
+# Ignore the Blender render cache
+render_cache/
+
+# Ignore the Blender autosave files
+*.autosave
+
+# Ignore the Blender asset library
+.blender_asset_library/
+
+# Ignore the Blender configuration files
+.blender/
+
+# Ignore the Blender user preferences
+.blender_userpref/
+
+# Ignore the Blender startup file
+.blender_startup/
+
+# Ignore the Blender system configuration
+.blender_system/
+
+# Ignore the Blender temp files
+.blender_temp/

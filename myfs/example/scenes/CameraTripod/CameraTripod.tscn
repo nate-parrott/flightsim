@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwh8gxlh37myd"]
+
+[ext_resource type="Script" path="res://example/scenes/CameraTripod/CameraTripod.gd" id="1"]
+
+[node name="CameraTripod" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 1.5, 11.252)
+fov = 110.0
+near = 0.5
+far = 15000.0
