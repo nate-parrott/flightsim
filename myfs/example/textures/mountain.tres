@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://iiinhikintin"]
+
+[ext_resource type="Shader" path="res://example/textures/mountain.gdshader" id="1_8bsin"]
+[ext_resource type="Texture2D" uid="uid://bfrg0scwjvggw" path="res://textures/coast_sand_05_diff_1k.jpg" id="2_nx5l5"]
+[ext_resource type="Texture2D" uid="uid://c36h5w54t178t" path="res://textures/rock_normal.png" id="3_yl8qg"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ms65j"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0qpp3"]
+seamless = true
+noise = SubResource("FastNoiseLite_ms65j")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_8bsin")
+shader_parameter/BEACH_COLOR = Color(0.953968, 0.789423, 0.539205, 1)
+shader_parameter/GRASS_COLOR = Color(0.2275, 0.65, 0.262708, 1)
+shader_parameter/ROCK_COLOR = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/SNOW_COLOR = Color(1, 1, 1, 1)
+shader_parameter/height_base = 70.0
+shader_parameter/height_scale = 600.0
+shader_parameter/height_noise_scale = 6000.0
+shader_parameter/texture_scale = 50.0
+shader_parameter/transition_smoothness = 0.1
+shader_parameter/NOISE_PATTERN = SubResource("NoiseTexture2D_0qpp3")
+shader_parameter/DIRT = ExtResource("2_nx5l5")
+shader_parameter/ROCK_NORMAL = ExtResource("3_yl8qg")

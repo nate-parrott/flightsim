@@ -23,7 +23,7 @@ func _ready():
 
 func _input(event):
 	# print(event)
-	if event is InputEventScreenTouch and _is_point_inside_area(event.position): #  or event is InputEventScreenDrag:
+	if event is InputEventScreenTouch and _is_point_inside_area(event.position) and event.is_pressed(): #  or event is InputEventScreenDrag:
 		var level_height = size.y / len(levels)
 		var level_index = floor((event.position.y - global_position.y) / level_height)
 		level_index = max(0, min(len(levels) - 1, level_index))
